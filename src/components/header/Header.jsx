@@ -126,7 +126,7 @@ const Header = () => {
   return (
     <div className="app-header">
       <section className="promo-header">
-        <span>Free Shipping on All Orders |</span> Get Extra ₹100 OFF on minimum
+        <span>Anand Verma  -----Free Shipping on All Orders |</span> Get Extra ₹100 OFF on minimum
         purchase of ₹999{" "}
       </section>
       <section className="quick-access-header">
