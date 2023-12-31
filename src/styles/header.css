@@ -1,0 +1,189 @@
+.promo-header{
+    background: #f8eb27;
+    padding: 6px 10%;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1d1d1d;
+    text-align: center;
+}
+.promo-header span{
+    font-weight: bold;
+}
+
+.quick-access-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 5px 10%;
+}
+.quick-access-header a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.quick-access-left a{
+    display: flex;
+    align-items: center;
+}
+.quick-access-right{
+    display: flex;
+    align-items: center;
+    
+}
+.quick-access-right button{
+    padding:0 10px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
+.quick-access-right button:first-child{
+    border-right: 1px solid white;
+}
+@media (max-width:768px) {
+    .quick-access-header{
+        padding: 5px 5%;
+    }
+    .quick-access-right button:last-child{
+        padding-right: 0;
+    }
+    .promo-header{
+        padding: 6px 5%;
+
+    }
+}
+
+.nav-header{
+    padding: 5px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    animation: slide-down 0.7s;
+    z-index: 5;
+}
+.app-header{
+    position: relative;
+}
+.nav-header.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+        
+      
+}
+.nav-items{
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.nav-header .nav-items a{
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 12px 20px;
+    text-decoration: none;
+    width: fit-content;
+}
+.nav-left .nav-items a:hover{
+    background-color: #f8eb27;
+
+}
+.nav-left-items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.nav-left{
+    display: flex;
+    gap: 10px;
+}
+.nav-toggel-button{
+    border: none;
+    background-color: #fff;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+    gap: 20px;
+    >a{
+        color: #000;
+    }
+    >button{
+        color: #000;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        /* display: flex;
+        
+        align-items: center; */
+        padding-top: 9px;
+    }
+}
+.MuiBadge-badge{
+    background-color: #ffdd00 !important;
+    color: #000;
+    
+}
+
+.search-bar{
+    background-color: #fff;
+    padding: 0.7rem;
+    border: 0.5px solid #ddc9c9;
+    >input{
+        outline: none;
+        border-radius: unset;
+        border: 0.5px solid #ddc9c9;
+        height: 2rem;
+    }
+    >button{
+        background-color: black;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        height: 2rem;
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width:768px) {
+    .nav-left-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: unset;
+    }
+    .nav-header{
+        align-items: flex-start;
+        padding: 5px 5%;
+        flex-wrap: wrap;
+    }
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        transition: height 0.3s ease-in-out;
+    }
+    .nav-right{
+        padding-top: 10px;
+    }
+}

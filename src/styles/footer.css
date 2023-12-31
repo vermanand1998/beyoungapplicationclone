@@ -1,0 +1,95 @@
+.footer-container{
+    background-color: black;
+    padding:0 10%;
+}
+
+.footer-menu-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 2rem 0;
+}
+.footer-menu a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-menu h4,
+.footer-about h4{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #F8EA49;
+}
+.footer-menu p,
+.footer-about p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.footer-icons-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.payments-icon-section,
+.social-icon-section {
+  width: 50%;
+}
+.social-icon-section .MuiSvgIcon-root{
+    height: 35px;
+    width: 35px;
+    color: white;
+    margin-right: 1rem;
+}
+.footer-icons-section h4{
+    padding: 1.5rem 0;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+.payments-icon-section{
+    border-right: 1px solid #F8EA49;
+    padding-right: 2rem;
+}
+.social-icon-section{
+    padding-left: 2rem;
+}
+
+@media (max-width:768px) {
+    .footer-icons-section{
+        flex-direction: column;
+    }
+    .payments-icon-section{
+        border: unset;
+        width: 100%;
+
+    }
+    .social-icon-section{
+        padding: unset;
+        width: 100%;
+
+    }
+}
+
+.footer-copyright{
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 3rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+
+
+

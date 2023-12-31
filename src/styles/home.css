@@ -1,0 +1,110 @@
+
+
+.bank-offer,
+.product-promo-container,
+.new-arrivals-container,
+.our-achievements,
+.categories-container,
+.fashion-better-banner,
+.best-seller-container,
+.reviews-container {
+  margin: 3rem 10%;
+}
+@media (max-width: 768px) {
+  .bank-offer,
+  .product-promo-container,
+  .new-arrivals-container,
+  .our-achievements,
+  .categories-container,
+  .fashion-better-banner,
+  .best-seller-container,
+  .reviews-container {
+    margin: 3rem 3%;
+  }
+  .categories-cards-section{
+    width: 100%;
+  }
+}
+.bank-offer .slick-prev,
+.bank-offer .slick-next,
+.hero-section .slick-prev,
+.hero-section .slick-next {
+  display: none !important;
+}
+
+.product-promo-container .promo-banner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 1rem; */
+}
+.product-promo-container .promo-banner a {
+  width: 48%;
+  >img{
+    width: 100%;
+  }
+}
+
+.promo-products-slider {
+  margin-top: 3rem;
+}
+.promo-products-slider h3,
+.new-arrivals-container h3,
+.categories-container h3,
+.best-seller-container h3,
+.reviews-container h3 {
+  border-bottom: 1px solid yellow;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.react-multi-carousel-list {
+  margin: 0 -10px !important;
+}
+.react-multi-carousel-item {
+  padding: 0 10px !important;
+}
+.new-arrivals-container .product-card, 
+.best-seller-container .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 0.7rm; */
+  border: 1px solid rgb(113, 112, 112);
+  border-radius: 0 0 10px 10px;
+  height: 100%;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+.new-arrivals-container .product-card h5, 
+  .best-seller-container .product-card h5,
+.new-arrivals-container .product-card span, 
+  .best-seller-container .product-card span {
+  text-align: center;
+  margin: 0 0.7rem;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 90%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.categories-cards-section{
+  display: flex;
+  width: 60%;
+  gap: 1rem;
+}
+.categories-cards-section img{
+  width: 100%;
+}
+
+
+.react-multiple-carousel__arrow{
+  z-index: 3 !important;
+}
